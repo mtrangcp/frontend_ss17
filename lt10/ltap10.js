@@ -6,11 +6,8 @@ if (number < 0) {
 } else {
     let sqrtNumber = Math.sqrt(number);
 
-    if (Number.isInteger(sqrtNumber)) {
-        document.write(`Số ${number} là số chính phương!`);
-    } else {
-        document.write(`Số ${number} không là số chính phương!`);
-    }
+    Number.isInteger(sqrtNumber) ? document.write(`Số ${number} là số chính phương!`) : document.write(`Số ${number} không là số chính phương!`);
+
 }
 
 
